@@ -23,7 +23,13 @@ income = float(input("Please enter your income: "))
 status = input("Please enter your status (single/married): ").lower()
 
 if status == "single":
-    if income <= 32000
+    if income <= 32000:
         tax = income * 0.10
-    else
-        tax = (income
+    else:
+        tax = ((income * 0.25) + 3200)
+if status == "married":
+    if income <= 64000:
+            tax = income * 0.10
+    else:
+            tax = ((income * 0.25) + 6400)
+print("You have to pay: $", (tax))

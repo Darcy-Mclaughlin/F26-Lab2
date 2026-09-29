@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Darcy McLaughlin
+# Date: 9/23/2026
 # Purpose: Learn how to use while loops with break and continue.
 # Usage: ./lab2j.py
 
@@ -24,11 +24,20 @@
 #Calculate the square root of num using the math.sqrt function.
 # TO DO 1: Import the `math` module.
 
-
 # TO DO 2: Create an infinite loop using while True.
-
     # TO DO 3: Check if num is zero:
-   
-
     # TO DO 4: Calculate the square root of num using the math.sqrt function.
+
+import math
+
+num = float(input("Enter a number: "))
+while True:
+    if num < 0:
+        print("Invalid number.")
+        continue
+    if num == 0:
+        print("Exiting...")
+        break
+    print(math.sqrt(num))
+
 
